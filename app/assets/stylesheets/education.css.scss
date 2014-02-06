@@ -1,0 +1,68 @@
+div#education {
+	div#image {
+		margin: 0px 10px 0 0px;
+		float: left;
+	}
+
+	p {
+	  clear: both;
+		margin-bottom: 0px;
+		padding-right: 10px;
+	}
+
+	ul	{
+		list-style: none;
+		padding-left: 0;
+		/*margin: 10px 0 0 0;*/
+	}
+
+	div#school_info {
+		float: left;
+		padding-bottom: 20px;
+	}
+
+	b {
+		text-transform: uppercase;
+	}
+
+	div.bar-foreground {
+
+		&#photoshop {
+			width: 80%;
+		}
+
+		&#illustrator {
+			width: 85%;
+		}
+
+		&#html5 {
+			width: 90%;
+		}
+
+		&#css3 {
+			width: 90%;
+		}
+
+		&#javascript {
+			width: 80%;
+		}
+
+		&#rails {
+			width: 80%;
+		}
+
+		&#databases {
+			width: 70%;
+		}
+
+		&#video {
+			width: 70%;
+		}
+
+		&#audio {
+			width: 60%;
+		}
+	}
+}
+
+	

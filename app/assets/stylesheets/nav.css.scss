@@ -1,0 +1,129 @@
+nav {
+	height: 118px;
+	background-color: #ffffff;
+	ul {
+		list-style: none;
+		text-transform: uppercase;
+		font-family: "Open Sans";
+		font-weight: 700;
+		font-size: 1.1em;
+		overflow: hidden;
+		padding-left: 0;
+
+		li {
+			float: left;
+			width: 157px;
+			height: 118px;
+			text-align: center;
+			border-right: 1px solid #e1e0dc;
+			position: relative;
+
+			&:last-of-type {
+				border-right: none;
+			}
+
+			a {
+				width: 157px;
+				height: 118px;
+				background-image: url('/assets/nav_icons.png');
+				background-repeat: no-repeat;
+				color: #848577;
+				position: absolute;
+				top: 30px;
+				right: 0px;
+				padding-top: 50px;
+
+				&:hover, &:active {
+					color: #fc410a;
+					text-decoration: none;
+				} 
+
+				&#profile {
+					&:link, &:visited {
+						background-position: 62px 0px;
+					}
+					&:hover, &:active {
+						background-position: 62px -130px;
+					}
+				}
+
+				&#profile_active {
+					color: #fc410a;
+					background-position: 62px -130px;
+				}
+
+				&#education {
+					&:link, &:visited {
+						background-position: -100px 0px;
+					}
+					&:hover, &:active {
+						background-position: -100px -130px;
+					}
+				}
+
+				&#education_active {
+					color: #fc410a;
+					background-position: -100px -130px;
+				}
+
+				&#experience {
+					&:link, &:visited {
+						background-position: -263px 0px;
+					}
+					&:hover, &:active {
+						background-position: -263px -130px;
+					}
+				}
+
+				&#experience_active {
+					color: #fc410a;
+					background-position: -263px -130px;
+				}
+
+				&#portfolio {
+					&:link, &:visited {
+						background-position: -427px 0px;
+					}
+					&:hover, &:active {
+						background-position: -427px -130px;
+					}
+				}
+
+				&#portfolio_active {
+					color: #fc410a;
+					background-position: -427px -130px;
+				}
+
+				&#blog {
+					&:link, &:visited {
+						background-position: -592px 0px;
+					}
+					&:hover, &:active {
+						background-position: -592px -130px;
+					}
+				}
+
+				&#blog_active {
+					color: #fc410a;
+					background-position: -592px -130px;
+				}
+
+				&#contact {
+					&:link, &:visited {
+						background-position: -750px 0px;
+					}
+					&:hover, &:active {
+						background-position: -750px -130px;
+					}
+				}
+
+				&#contact_active {
+					color: #fc410a;
+					background-position: -750px -130px;
+				}
+			}
+
+
+		}
+	}
+}

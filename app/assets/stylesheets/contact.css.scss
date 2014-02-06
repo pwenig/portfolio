@@ -1,0 +1,86 @@
+div#contact {
+
+	img#google-map {
+		padding: 5px;
+		border: 1px solid #ddd;
+	}
+
+	#adress {
+		h4 {
+			margin-bottom: 0px;
+		}
+		p {
+			font-size: 1.6em;
+			font-weight: 200;
+			margin-bottom: 25px;
+		}
+	}
+
+	form {
+
+		input, textarea {
+			&.btn {
+				width: 75px;
+			}
+		}
+	}
+
+	ul {
+		list-style: none;
+		margin-top: 6px;
+		padding-left: 0;
+	}
+
+	ul#social_media {
+		list-style: none;
+		margin-left: 0px;
+
+		li {
+			float: left;
+			height: 30px;
+			width: 30px;
+			/*background-color: red;*/
+			margin-right: 15px;
+
+			a {
+				display: block;
+				background-image: url('/assets/icons_social.png');
+				background-repeat: no-repeat;
+				height: 30px;
+				width: 30px;
+			}
+
+			a#facebook {
+				background-position: 3px 0px;
+
+				&:hover {
+					background-position: 3px -80px;
+				}
+			}
+
+			a#linkedin {
+				background-position: -83px 0;
+
+				&:hover {
+					background-position: -83px -80px;
+				}
+			}
+
+			a#twitter {
+				background-position: -168px 1px;
+
+				&:hover {
+					background-position: -168px -79px;
+				}
+			}
+
+			a#github {
+				background-position: -254px 1px;
+
+				&:hover {
+					background-position: -254px -79px;
+				}
+			}
+		}
+	}
+}

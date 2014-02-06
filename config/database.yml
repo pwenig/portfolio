@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: portfolio_site_development
+  pool: 5
+  username: davidortizfrau
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: portfolio_site_test
+  pool: 5
+  username: davidortizfrau
+  password:

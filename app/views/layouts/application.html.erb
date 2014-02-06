@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>David Ortiz Frau</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'favicon.ico' %>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+</head>
+<body class="box_gradient">
+	
+	<div class="container">
+		
+		<div class="row">
+
+			<div class="col-xs-10">
+				<%= render "layouts/nav" %>
+				<div class="page_content white" id="<%= yield :page_id %>">
+					<%= yield %>
+					<%= render "layouts/footer" %>
+				</div>
+			</div>
+
+			<div class="col-xs-2">
+				<%= render "layouts/mini_profile" %>
+				<%= render "layouts/peek_my_code" %>
+			</div>
+				
+		</div><!-- end row -->
+	
+	</div><!-- end container -->
+		
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</body>
+</html>

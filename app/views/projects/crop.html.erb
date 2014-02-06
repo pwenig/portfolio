@@ -1,0 +1,16 @@
+<div class="col-xs-12">
+	<h1>Crop Image</h1>
+
+	<%= image_tag @project.image_url(:large), id: "cropbox" %>
+
+
+<%= form_for @project do |f| %>
+  <% %w[x y w h].each do |attribute| %>
+    <%= f.hidden_field "crop_#{attribute}" %>
+  <% end %>
+  <div class="actions">
+    <%= f.submit "Crop", class: "btn" %>
+  </div>
+<% end %>
+
+</div>

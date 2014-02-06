@@ -1,0 +1,15 @@
+<li class="project">
+	<a href="<%= project_path(project) %>">
+		<% if project.image_url %>
+			<%= image_tag project.image_url(:thumb).to_s %>
+		<% elsif project.video %>
+		  <% regex = /src="\S+"/ %>
+			<iframe <%= raw(project.video[regex]) %> width="100%" height="160" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		<% end %>
+
+		<div>
+			<h1><%= project.title %></h1>
+			<h4><%= project.date %></h4>
+		</div>
+	</a>
+</li>

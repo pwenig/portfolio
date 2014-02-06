@@ -1,0 +1,24 @@
+<% @contact_form = ContactForm.new %>
+
+<%= form_for @contact_form, url: send_email_path do |f| %>
+
+	<div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :email %>
+    <%= f.text_field :email, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :body, "Comments" %>
+    <%= f.text_area :body, class: "form-control", size: "4px 5px" %>
+  </div>
+
+  <%= f.hidden_field :current_url, value: "#{request.fullpath}" %>
+
+  <%= f.submit "Send", class: "btn btn-default" %>
+<% end %>
+

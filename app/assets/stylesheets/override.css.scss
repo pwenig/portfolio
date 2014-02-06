@@ -1,0 +1,57 @@
+.container {
+	width: 1170px !important
+}
+
+body {
+	padding-top: 60px;
+	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+}
+	.box_gradient {
+	background-color: #1c132b;
+	background-image: -webkit-gradient(linear, left top, right top, from(#1c132b), to(#371532));
+	background-image: -webkit-linear-gradient(left, #1c132b, #371532);
+	background-image: -moz-linear-gradient(left, #1c132b, #371532);
+	background-image: -o-linear-gradient(left, #1c132b, #371532);
+	background-image: linear-gradient(to right, #1c132b, #371532);
+}
+
+.white {
+	background-color: #fcfcfc;
+}
+
+nav {
+	margin-bottom: 30px;
+}
+
+.page_content {
+	padding-left: 7px;
+	h1 {
+		color: #fc410a;
+		font-weight: 300;
+		font-size: 2em;
+	}
+
+	h4 {
+		color: #848577;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: .85em;
+		margin-left: 1px;
+
+		i {
+			text-transform: none;
+			color: #cccccc;
+		}
+	}
+
+	p {
+
+	}
+}
+
+footer {
+	overflow: hidden;
+	padding: 15px;
+	margin-bottom: 60px;
+}

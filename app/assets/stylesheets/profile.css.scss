@@ -1,0 +1,186 @@
+div#profile {
+
+	div.likes {
+		float: left;
+		height: 45px;
+		width: 45px;
+		/*background-color: red;*/
+		background-image: url('/assets/icons_likes.png');
+		background-repeat: no-repeat;
+		margin-left: 22px;
+		margin-top: 22px;
+		position: relative;
+
+		div {
+			color: white;
+			font-size: 12px;
+			padding: 4px 5px 2px;
+			background-color: rgba(249, 64, 10, 0.95);
+  		-webkit-border-radius: 4px;
+      border-radius: 4px;
+  		background-clip: padding-box;
+  		position: absolute;
+  		top: -20px;
+  		visibility: hidden;
+  		display: block;
+		}
+
+		&#fuji {
+			background-position: 3px 5px;
+
+			&:hover {
+				background-position: 4px -91px;
+
+				div {
+					visibility: visible;
+				}
+			}
+
+			div {
+				width: 140px;
+				left: -50px;
+				top: -40px;
+			}
+		}
+
+		&#swords {
+			background-position: -192px 6px;
+
+			&:hover {
+				background-position: -191px -90px;
+
+				div {
+					visibility: visible;
+					width: 140px;
+					left: -48px;
+				}
+			}
+		}
+
+		&#cooking {
+			background-position: -290px 6px;
+
+			&:hover {
+				background-position: -289px -90px;
+
+				div {
+					visibility: visible;
+					width: 102px;
+					left: -30px;
+				}
+			}
+		}
+
+		&#baseball {
+			background-position: -583px 6px;
+
+			&:hover {
+				background-position: -582px -90px;
+
+				div {
+					visibility: visible;
+					width: 64px;
+					left: -10px;
+				}
+			}
+		}
+
+		&#code {
+			background-position: -486px 6px;
+
+			&:hover {
+				background-position: -485px -90px;
+
+				div {
+					visibility: visible;
+					width: 122px;
+					left: -40px;
+				}
+			}
+		}
+
+		&#alien {
+			background-position: -681px 6px;
+
+			&:hover {
+				background-position: -680px -90px;
+
+				div {
+					visibility: visible;
+					width: 126px;
+					left: -40px;
+				}
+			}
+		}
+
+		&#money {
+			background-position: -95px 6px;
+
+			&:hover {
+				background-position: -94px -90px;
+
+				div {
+					visibility: visible;
+					width: 165px;
+					top: -55px;
+					left: -60px;
+				}
+			}
+		}
+
+		&#soccer {
+			background-position: -388px 6px;
+
+			&:hover {
+				background-position: -387px -90px;
+
+				div {
+					visibility: visible;
+					width: 120px;
+					left: -38px;
+				}
+			}
+		}
+
+	}
+
+	div.bar-foreground {
+
+		&#creativity {
+			width: 80%;
+		}
+
+		&#problem_solving {
+			width: 95%;
+		}
+
+		&#organization {
+			width: 70%;
+		}
+
+		&#teamwork {
+			width: 90%;
+		}
+
+		&#learning {
+			width: 92%;
+		}
+
+		&#concentration {
+			width: 80%;
+		}
+	}
+
+	h4 {
+		i {
+			text-transform: none;
+			color: #cccccc;
+		}
+	}
+
+	div#icons {
+		margin-left: -20px;
+	}
+}
+
+	

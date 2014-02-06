@@ -1,0 +1,54 @@
+<%= form_for @project do |f| %>
+  <% if @project.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+      <% @project.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :title %><br />
+    <%= f.text_field :title, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :description %><br />
+    <%= f.text_area :description, class: "form-control", size: "1x5" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :link %><br />
+    <%= f.text_field :link, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.label :date %><br />
+    <%= f.date_select :date, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :technologies %><br>
+    <% Project.tech.each do |t| %>
+      <% if @project.technologies && @project.technologies.include?(t) %>
+        <%= check_box_tag "project[technologies][]", t, true %>
+      <% else %>
+        <%= check_box_tag "project[technologies][]", t %>
+      <% end %>
+      <%= label_tag t %><br>
+    <% end %>
+    
+  </div>
+  <div class="form-group">
+    <%= f.label :image %><br />
+    <%= f.file_field :image %>
+  </div>
+  <div class="form-group">
+    <%= f.label :video %><br />
+    <%= f.text_area :video, class: "form-control", size: "1x5" %>
+  </div>
+  <div class="actions">
+    <%= f.submit class: "btn btn-default" %>
+  </div>
+<% end %>

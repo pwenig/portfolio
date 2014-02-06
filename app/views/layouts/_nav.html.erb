@@ -1,0 +1,21 @@
+<% nav = %w(profile education experience portfolio blog contact) %>
+
+<nav class="white">
+	<ul>
+		<% nav.each do |c| %>
+			<% regex = /#{c}/ %>
+			<% if request.fullpath[regex] %>
+				<li><a id="<%= c %>_active" href="/<%= c %>"><%= c %></a></li>
+			<% else %>
+				<li><a id="<%= c %>" href="/<%= c %>"><%= c %></a></li>
+				<% regex_root = /^\/$/ %>
+				<% regex_projects = /\/projects/ %>
+				<% if request.fullpath[regex_root] || request.fullpath[regex_projects] %>
+					<script type="text/javascript">
+						$("#portfolio").attr('id', 'portfolio_active')
+					</script>
+				<% end %>
+			<% end %>
+		<% end %>
+	</ul>
+</nav>
