@@ -19,6 +19,8 @@ gem "rmagick"
 gem "carrierwave"
 gem 'fog'
 
+gem "newrelic_rpm", "~> 3.7.1.188"
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

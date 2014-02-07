@@ -13,7 +13,7 @@ class Project < ActiveRecord::Base
 
   # Class instance variables
 
-  @tech = %w(HTML5 CSS3 Rails JavaScript SSL Google_Maps_API)
+  @tech = %w(HTML5 CSS3 Rails JavaScript SSL Google_Maps_API Illustrator Photoshop ActionScript_3)
   
   class << self
   	attr_accessor :tech

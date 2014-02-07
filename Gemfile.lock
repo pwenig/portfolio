@@ -71,6 +71,7 @@ GEM
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-ssh (2.6.8)
+    newrelic_rpm (3.7.1.188)
     nokogiri (1.5.10)
     pg (0.15.1)
     polyglot (0.3.3)
@@ -128,6 +129,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   fog
   jquery-rails
+  newrelic_rpm (~> 3.7.1.188)
   pg
   rails (= 3.2.7)
   rmagick
