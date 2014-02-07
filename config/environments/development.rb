@@ -15,7 +15,7 @@ PortfolioSite::Application.configure do
 
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => ENV["DEFAULT_URL"] }
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
@@ -23,8 +23,8 @@ PortfolioSite::Application.configure do
     :address              => "smtp.gmail.com",
     :port                 => 587,
     :domain               => "davidortizfrau.me",
-    :user_name            => "davidortizfrau@gmail.com",
-    :password             => "veroniko30",
+    :user_name            => ENV["GMAIL_USERNAME"],
+    :password             => ENV["GMAIL_PASSWORD"],
     :authentication       => "plain"
   }
 
