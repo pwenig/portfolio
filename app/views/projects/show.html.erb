@@ -4,7 +4,7 @@
   <h4><%= @project.date.strftime("%b %Y") %></h4>
   <p><%= @project.description %></p>
 
-  <h4>Tecnologies Used</h4>
+  <h4 id="tech">Tecnologies Used</h4>
   <%= @project.technologies.join(", ").gsub("_", " ") if @project.technologies %>
   
   <% if @project.link != "" %>

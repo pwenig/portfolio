@@ -5,7 +5,7 @@ class Project < ActiveRecord::Base
                   :title, :technologies, :crop_x, :crop_y, 
                   :crop_w, :crop_h
 
-  
+  default_scope order('date DESC')
   
   serialize :technologies
 
