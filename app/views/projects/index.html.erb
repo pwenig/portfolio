@@ -15,7 +15,7 @@
   <% @projects.each do |project| %>
     <tr>
       <td><%= project.title %></td>
-      <td><%= project.date %></td>
+      <td><%= project.date.strftime("%B %Y") %></td>
       <td><%= project.technologies.join(", ") if project.technologies %></td>
       <td><%= "ok" if project.image %></td>
       <td><%= link_to 'Show', project %></td>
