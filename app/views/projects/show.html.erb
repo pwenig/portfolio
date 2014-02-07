@@ -6,8 +6,9 @@
 
   <h4>Tecnologies Used</h4>
   <%= @project.technologies.join(", ").gsub("_", " ") if @project.technologies %>
-  <hr>
+  
   <% if @project.link != "" %>
+    <hr>
   	<%= link_to "Visit Project", @project.link, class: "btn btn-default", target: "_blank" %>
   <% end %>
 </div>
@@ -19,6 +20,6 @@
 	<% end %>
 
   <% if @project.image_url %>
-		<%= image_tag @project.image_url, id: "project_image", class: "img-thumbnail" %>
+		<%= image_tag @project.image_url, id: "project_image" %>
 	<% end %>
 </div>
