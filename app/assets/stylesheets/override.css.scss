@@ -26,6 +26,9 @@ nav {
 
 .page_content {
 	padding-left: 7px;
+	overflow: hidden;
+	margin-bottom: 60px;
+
 	h1 {
 		color: #fc410a;
 		font-weight: 300;
@@ -53,5 +56,6 @@ nav {
 footer {
 	overflow: hidden;
 	padding: 15px;
-	margin-bottom: 60px;
+	clear: both;
+	margin-bottom: 10px; 
 }
