@@ -4,7 +4,7 @@ class ContactController < ApplicationController
 		url = request.referrer
 		if @contact_form.valid?
 			ContactMailer.contact(@contact_form).deliver
-			flash[:success] = "Thank you for contacting us, we'll get back to you as soon as we can."
+			flash[:success] = "Thanks for contacting me, I'll get back to you as soon as I can."
 			redirect_to url
 		else
 			flash[:error] = "Email Not sent. Please fill all fields"
