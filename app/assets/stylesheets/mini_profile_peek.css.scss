@@ -19,30 +19,21 @@
 		margin-left: 1px;
 	}
 
-	.btn {
-		margin-left: 2px;
-		width: 130px;
-	}
-	
+
 }
 
 
 #peek_my_code {
-	img {
-		margin: 22px;
-	}
-
+    padding: 20px;
+  text-align: center;
 	.btn {
-		margin-left: 17px;
-		margin-bottom: 18px;
-		background-color: #FF6633;
-		border-color: #CC6633;
-		width: 130px;		
+		background-color: #428bca;
+		border-color: #357ebd;
 
 		&:hover {
-			background-color: #fc410a;
-			border-color: #FF3300;
-			
+			background-color: #428bca;
+			border-color: #357ebd;
 		}
 	}
+
 }

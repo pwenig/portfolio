@@ -8,12 +8,12 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 	.box_gradient {
-	background-color: #1c132b;
-	background-image: -webkit-gradient(linear, left top, right top, from(#1c132b), to(#371532));
-	background-image: -webkit-linear-gradient(left, #1c132b, #371532);
-	background-image: -moz-linear-gradient(left, #1c132b, #371532);
-	background-image: -o-linear-gradient(left, #1c132b, #371532);
-	background-image: linear-gradient(to right, #1c132b, #371532);
+	background-color: red;
+	background-image: -webkit-gradient(linear, left top, right top, from(red), to(#371532));
+	background-image: -webkit-linear-gradient(left, red, #371532);
+	background-image: -moz-linear-gradient(left, red, #371532);
+	background-image: -o-linear-gradient(left, red, #371532);
+	background-image: linear-gradient(to right, red, #371532);
 }
 
 .white {
