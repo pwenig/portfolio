@@ -9,11 +9,11 @@ body {
 }
 	.box_gradient {
 	background-color: red;
-	background-image: -webkit-gradient(linear, left top, right top, from(red), to(#371532));
-	background-image: -webkit-linear-gradient(left, red, #371532);
-	background-image: -moz-linear-gradient(left, red, #371532);
-	background-image: -o-linear-gradient(left, red, #371532);
-	background-image: linear-gradient(to right, red, #371532);
+	background-image: -webkit-gradient(linear, left top, right top, from(#8A0808), to(#610B0B));
+	background-image: -webkit-linear-gradient(left, #8A0808, #610B0B);
+	background-image: -moz-linear-gradient(left, #8A0808, #610B0B);
+	background-image: -o-linear-gradient(left, #8A0808, #610B0B);
+	background-image: linear-gradient(to right, #8A0808, #610B0B);
 }
 
 .white {
@@ -30,16 +30,16 @@ nav {
 	margin-bottom: 60px;
 
 	h1 {
-		color: #fc410a;
+		color: darkred;
 		font-weight: 300;
 		font-size: 2em;
 	}
 
 	h4 {
-		color: #848577;
+		color: black;
 		font-weight: 400;
 		text-transform: uppercase;
-		font-size: .85em;
+		font-size: 1.4em;
 		margin-left: 1px;
 
 		i {
