@@ -6,24 +6,21 @@
   <% end %>
 	<h1>Contact Information</h1>
 	<h4>Based in Boulder, CO</h4>
-	
+
 	<div class="row">
 		<div class="col-xs-8">
-			<img id="google-map" src="http://maps.googleapis.com/maps/api/staticmap?center= 40.03998,-105.25619&zoom=12&size=580x300&sensor=false&markers=true&key=AIzaSyBctmb1CkXArV5QHm-iZHPELoUu1j0b6y4&markers=color:blue|40.03998,-105.25619"/>
+			<%= image_tag('boulder_flatirons.jpg', width: "500px") %>
 		</div>
 		<div class="col-xs-4" id="adress">
-			<h4>Address</h4>
-			<p>2852 Kalmia Ave #205<br>	Boulder, CO 80301</p>
 			<h4>Phone</h4>
-			<p>(303) 618-2129</p>
+			<p>(303) 808-3979</p>
 			<h4>Email</h4>
-			<p>davidortizfrau@gmail.com</p>		
-			<h4>Social network</h4>	
+			<p><a href="mailto:pwenig@gmail.com?Subject=Introduction" target="_top">pwenig@gmail.com</a></p>
+			<h4>Social network</h4>
 			<ul id="social_media">
-				<li><a href="https://www.facebook.com/david.ortiz.5492216" id="facebook" target="_blank"></a></li>
-				<!-- <li><a href="#" id="linkedin"></a></li> -->
-				<!-- <li><a href="https://twitter.com/DavidOrtizFrau" id="twitter" target="_blank"></a></li> -->
-				<li><a href="https://github.com/davidortizfrau" id="github" target="_blank"></a></li>
+				 <li><a href="http://www.linkedin.com/in/paulwenig/" id="linkedin", target="_blank"></a></li>
+				 <li><a href="https://twitter.com/pwenig" id="twitter" target="_blank"></a></li>
+				<li><a href="https://github.com/pwenig" id="github" target="_blank"></a></li>
 			</ul>
 		</div>
 
@@ -32,14 +29,5 @@
 	</div>
 
 	<br>
-
-	<div class="row">
-		<div class="col-xs-5">
-			<h1>Send me a message</h1>
-			<%= render "pages/contact_form" %>
-		</div>
-	</div>
-
-		
 
 </div>
